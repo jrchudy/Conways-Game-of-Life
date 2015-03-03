@@ -16,7 +16,7 @@ public class ConwaysGame {
 	public ConwaysGame(int boardSize, int cellSize){
 		conwaysBoard = new ConwaysBoard(boardSize);
 		conwaysBoard.initBoard();
-		conwaysPanel = new ConwaysPanel(conwaysBoard.getBoard(), boardSize, cellSize);
+		conwaysPanel = new ConwaysPanel(this, conwaysBoard.getBoard(), boardSize, cellSize);
 		currentState = GameState.MENU;
 	}
 	
